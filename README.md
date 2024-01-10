@@ -10,4 +10,5 @@ There are oppertunities to break the entire platform into a Microservices orient
 The following are areas to explore and take things to the next level. Fasten your seat belts!
 
 - SPA frontends for the drivers web app -> `drivers.grabcab.co/signup` hooking to NodeJS API which authenticates using JWT/Refresh Tokens.
+- Corporate app for businesses to signup -> `corporate.grabcab.co/signup` will allow companies to book ride and manage employee spendings.
 
