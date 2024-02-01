@@ -57,4 +57,6 @@ For Driver Signup there are a few obstacles to tackle for example Licensing Auth
    - Once final step complete, we trigger other actions such as send notification to onboarding team to process and respond to the driver
    - AOB > ??
 
+![image](https://github.com/rachow/grabcab/assets/12745192/4b48a9ec-46a8-43b3-8bd1-597f07ba8b11)
+
 ...
