@@ -1,6 +1,6 @@
 # Grabcab.co
 
-This project is an ongoing attempt to demonstrate the technology behind ride hailing apps in the likes of Uber and Bolt but with a small twist.
+This project is an ongoing attempt to demonstrate the technology behind ride hailing apps in the likes of Uber and Bolt but with a twist.
 
 1. Driver Signups (Documents, Licensing, PCO Authorizations, Country/Region/Town Restrictions)
 2. Dispatch Integrations (Connect to Worldwide suppliers of Cab Operators)
