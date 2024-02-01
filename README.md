@@ -41,9 +41,20 @@ The following are areas to explore and take things to the next level. Fasten you
        - Can we scale MongoDB [x]-[x]-[x] Horizontal (not a fan of Vertical), what about any latency?   
      - **Payment API** - Money talks! So does depending on things like currency conversions, locale, PSP (Payment Service Provider) and what locale? 
 
+
+- gRPC / Apache Thrift (Binary message encode/decode - Faster TCP Transmission)
+   - Break this down in terms of how we can shift data at the speed of light between systems!
+  
 ### Driver Signup
 
 For Driver Signup there are a few obstacles to tackle for example Licensing Authority, Country based restrictions and so on.
 
+- Stepped process (/driver-signup/xxxx-xxxx-xxxx/3)
+   - RDBMS keeps track of the last step taken and the details captured in field `step`
+   - Store driver UUID mapping on browser (localStorage API/Cookie) to allow them to continue, however secure by asking to confirm mobile no?
+   - All documents to be stored on Amazon S3
+   - Processes to wipe-out those that do not complete signup within [x] days including wiping any S3 objects - step dependent.
+   - Once final step complete, we trigger other actions such as send notification to onboarding team to process and respond to the driver
+   - AOB > ??
 
 ...
