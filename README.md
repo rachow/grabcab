@@ -20,6 +20,7 @@ The following are areas to explore and take things to the next level. Fasten you
 - Corporate app for businesses to signup -> `corporate.grabcab.co/signup` will allow companies to book ride and manage employee spendings.
    - Consider SPA in future and connect to NodeJS.
    - NodeJS will connect to MySQL/Redis. Any Queues?
+   - Features like Groups/Policies give you the edge to control the ride habbits of your employees.
 - Delivery app for businesses that need instant delivery -> `delivery.grabcab.co/welcome` allowing companies to book a cab on demand!
    - Consider SPA in future and connect to NodeJS.
    - NodeJS will connect to MySQL (RDBMS) and Redis (in-memory cache) or Redis Clustered Pool.
