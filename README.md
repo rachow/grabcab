@@ -1,8 +1,13 @@
 # Grabcab.co
 
-This project is an ongoing attempt to demonstrate the technology behind ride hailing apps in the likes of Uber and Bolt.
+This project is an ongoing attempt to demonstrate the technology behind ride hailing apps in the likes of Uber and Bolt but with a small twist.
 
-There are oppertunities to break the entire platform into a Microservices oriented infrastructure with Amazon AWS powering the server techs.
+1. Driver Signups (Documents, Licensing, PCO Authorizations, Country/Region/Town Restrictions)
+2. Dispatch Integrations (Connect to Worldwide suppliers of Cab Operators)
+
+This project aims to provide the best of both worlds, dispatch integrations, and self-employed drivers on the platform.
+
+There are oppertunities to break the entire platform into a Microservices oriented infrastructure with Amazon AWS powering the server tech.
 
 ![image](https://github.com/rachow/grabcab/assets/12745192/b66885c8-26b0-4aab-af19-a923247845d8)
 ![image](https://github.com/rachow/grabcab/assets/12745192/f80023fd-308f-45b7-9115-e47fc229db17)
@@ -25,5 +30,19 @@ The following are areas to explore and take things to the next level. Fasten you
      - **Logging API** (This allows us to consolidate logging from every app, APIs, SDKs, etc to a single place). The logging API is internally port mapped by Reverse-Proxy. We can also do the following to scale the infrastructure. Firstly consider adding a Message Broker to drip-feed high I/O (TCP) frequency. Secondly hook to a logging service which will allow you to visualise the data and search, you could consider ELK (Elastic-Logstash-Kibana).
      - **Dispatch API** (The dispatch API is responsible for many moving parts that involve for example Geo fencing, proximity ETA (lat/lng), S2 Geometry)
         - MongoDB (Allows us to store flat structured data - JSON - driver_id,lat,lng,reg, etc)
+          - driver_id (UUID) / Sync to RDBMS (Primary/Foreign Key) ?
+          - firstname 
+          - lastname
+          - vehicle_id (UUID) - Mapped to vehicle data stored in RDBMS.
+          - lat (last recorded coordinate)
+          - lng (last recorded coordinate)
+          - ??
+       - Can we scale MongoDB [x]-[x]-[x] Horizontal (not a fan of Vertical), what about any latency?   
+     - **Payment API** - Money talks! So does depending on things like currency conversions, locale, PSP (Payment Service Provider) and what locale? 
+
+### Driver Signup
+
+For Driver Signup there are a few obstacles to tackle for example Licensing Authority, Country based restrictions and so on.
+
 
 ...
